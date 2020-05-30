@@ -22,7 +22,6 @@
 #  MA 02110-1301, USA.
 #
 
-
 # 3rd party
 import importlib_resources
 
@@ -30,10 +29,8 @@ import importlib_resources
 from wx_icons_suru import Suru
 from wx_icons_humanity import HumanityIconTheme, wxHumanityIconTheme
 
-
 with importlib_resources.path(Suru, "index.theme") as theme_index_path:
 	theme_index_path = str(theme_index_path)
-
 
 __version__ = "0.1.1"
 
@@ -53,12 +50,12 @@ class SuruIconTheme(HumanityIconTheme):
 		"""
 		Create an instance of the Suru Icon Theme
 		"""
-		
+
 		with importlib_resources.path(Suru, "index.theme") as theme_index_path:
 			theme_index_path = str(theme_index_path)
-		
+
 		return cls.from_configparser(theme_index_path)
-		
+
 	def find_icon(self, icon_name, size, scale, prefer_this_theme=True):
 		"""
 
@@ -74,7 +71,7 @@ class SuruIconTheme(HumanityIconTheme):
 		:return:
 		:rtype:
 		"""
-		
+
 		icon = self._do_find_icon(icon_name, size, scale, prefer_this_theme)
 		if icon:
 			return icon
@@ -85,7 +82,7 @@ class SuruIconTheme(HumanityIconTheme):
 
 class wxSuruIconTheme(wxHumanityIconTheme):
 	_suru_theme = SuruIconTheme.create()
-	
+
 	def CreateBitmap(self, id, client, size):
 		icon = self._suru_theme.find_icon(id, size.x, None)
 		if icon:
@@ -101,10 +98,10 @@ class wxSuruIconTheme(wxHumanityIconTheme):
 if __name__ == '__main__':
 	# theme = SuruIconTheme.from_configparser(theme_index_path)
 	theme = SuruIconTheme.create()
-	
+
 	# for directory in theme.directories:
 	# 	print(directory.icons)
-	
+
 	from wx_icons_hicolor import test_random_icons, test
 	# test_random_icons(theme)
 	test.test_icon_theme(theme, show_success=False)
