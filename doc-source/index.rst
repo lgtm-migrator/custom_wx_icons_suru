@@ -7,6 +7,9 @@ wx_icons_suru
 **Suru icon theme for wxPython**
 
 .. end short_desc
+
+This package provides a wxPython wxArtProvider class with icons from the Suru Icon Theme.
+
 .. start shields 
 
 .. list-table::
@@ -75,7 +78,7 @@ wx_icons_suru
 .. end shields
 
 Installation
-----------------
+===============
 
 .. start installation
 
@@ -97,12 +100,13 @@ Installation
 .. end installation
 
 .. toctree::
-    :maxdepth: 3
-    :caption: Documentation
+	:maxdepth: 3
+	:caption: Documentation
 
-    docs
-    Source
-    Building
+	usage
+	docs
+	Source
+	Building
 
 
 .. start links

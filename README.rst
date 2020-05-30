@@ -1,6 +1,6 @@
-*****************************************************
-Suru Icon Themes for wxPython
-*****************************************************
+=====================
+wx_icons_suru
+=====================
 
 .. start short_desc
 
@@ -91,6 +91,9 @@ To install with ``pip``:
 	$ python -m pip install wx_icons_suru
 
 .. end installation
+
+Usage
+=======
 
 To use ``wx_icons_suru`` in your application:
 
