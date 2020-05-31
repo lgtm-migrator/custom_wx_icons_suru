@@ -78,4 +78,3 @@ build
 *.egg-info
 **/__pycache__
 **/conda
-wx_icons_suru/Suru/**/__init__.py
