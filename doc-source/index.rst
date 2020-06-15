@@ -4,7 +4,7 @@ wx_icons_suru
 
 .. start short_desc
 
-**Suru icon theme for wxPython**
+**Suru icon theme for wxPython 🐍**
 
 .. end short_desc
 
