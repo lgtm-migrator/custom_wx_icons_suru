@@ -19,8 +19,7 @@ This package provides a wxPython wxArtProvider class with icons from the Suru Ic
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |travis| |actions_windows| |actions_macos|
-	    |codefactor|
+	  - |travis| |actions_windows| |actions_macos| |codefactor|
 	* - PyPI
 	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
@@ -43,7 +42,7 @@ This package provides a wxPython wxArtProvider class with icons from the Suru Ic
 .. |actions_windows| image:: https://github.com/domdfcoding/custom_wx_icons_suru/workflows/Windows%20Tests/badge.svg
 	:target: https://github.com/domdfcoding/custom_wx_icons_suru/actions?query=workflow%3A%22Windows+Tests%22
 	:alt: Windows Tests Status
-	
+
 .. |actions_macos| image:: https://github.com/domdfcoding/custom_wx_icons_suru/workflows/macOS%20Tests/badge.svg
 	:target: https://github.com/domdfcoding/custom_wx_icons_suru/actions?query=workflow%3A%22macOS+Tests%22
 	:alt: macOS Tests Status
