@@ -22,22 +22,25 @@
 #  MA 02110-1301, USA.
 #
 
+# stdlib
+from typing import Any, Optional, Tuple, Union
+
 # 3rd party
-from typing import Optional, Any, Union, Tuple
-import wx  # type: ignore
 import importlib_resources  # type: ignore
+import wx  # type: ignore
+from wx_icons_hicolor import Icon, IconTheme
 from wx_icons_humanity import HumanityIconTheme, wxHumanityIconTheme  # type: ignore  # TODO
-from wx_icons_hicolor import Icon
+
 # this package
 from wx_icons_suru import Suru
 
 with importlib_resources.path(Suru, "index.theme") as theme_index_path:
 	theme_index_path = str(theme_index_path)
 
-__version__ = "0.1.1"
+__version__: str = "0.1.1"
 
 
-def version():
+def version() -> str:
 	return f"""wx_icons_suru
 Version {__version__}
 Suru Icon Theme Version 20.04.4
@@ -45,7 +48,7 @@ Suru Icon Theme Version 20.04.4
 
 
 class SuruIconTheme(HumanityIconTheme):
-	_humanity_theme = HumanityIconTheme.create()
+	_humanity_theme: IconTheme = HumanityIconTheme.create()
 
 	@classmethod
 	def create(cls):
@@ -64,7 +67,7 @@ class SuruIconTheme(HumanityIconTheme):
 			size: int,
 			scale: Any,
 			prefer_this_theme: bool = True,
-	) -> Optional[Icon]:
+			) -> Optional[Icon]:
 		"""
 
 		:param icon_name:
@@ -89,7 +92,7 @@ class SuruIconTheme(HumanityIconTheme):
 
 
 class wxSuruIconTheme(wxHumanityIconTheme):
-	_suru_theme = SuruIconTheme.create()
+	_suru_theme: IconTheme = SuruIconTheme.create()
 
 	def CreateBitmap(self, id: Any, client: Any, size: Union[Tuple[int], wx.Size]) -> wx.Bitmap:
 		icon = self._suru_theme.find_icon(id, size[0], None)
@@ -109,9 +112,8 @@ if __name__ == '__main__':
 
 	# for directory in theme.directories:
 	# 	print(directory.icons)
-
 	# 3rd party
-	from wx_icons_hicolor import test, test_random_icons, Icon  # type: ignore  # TODO
+	from wx_icons_hicolor import test, test_random_icons  # TODO
 
 	# test_random_icons(theme)
 	test.test_icon_theme(theme, show_success=False)
