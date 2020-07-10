@@ -10,7 +10,7 @@ wx_icons_suru
 
 This package provides a wxPython wxArtProvider class with icons from the Suru Icon Theme.
 
-.. start shields 
+.. start shields
 
 .. list-table::
 	:stub-columns: 1
@@ -30,7 +30,7 @@ This package provides a wxPython wxArtProvider class with icons from the Suru Ic
 .. |docs| image:: https://img.shields.io/readthedocs/custom_wx_icons_suru/latest?logo=read-the-docs
 	:target: https://custom_wx_icons_suru.readthedocs.io/en/latest/?badge=latest
 	:alt: Documentation Status
-	
+
 .. |docs_check| image:: https://github.com/domdfcoding/custom_wx_icons_suru/workflows/Docs%20Check/badge.svg
 	:target: https://github.com/domdfcoding/custom_wx_icons_suru/actions?query=workflow%3A%22Docs+Check%22
 	:alt: Docs Check Status
@@ -59,7 +59,7 @@ This package provides a wxPython wxArtProvider class with icons from the Suru Ic
 	:target: https://pypi.org/project/wx_icons_suru/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_suru
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/wx_icons_suru?logo=python&logoColor=white
 	:target: https://pypi.org/project/wx_icons_suru/
 	:alt: PyPI - Supported Python Versions
 
@@ -72,8 +72,8 @@ This package provides a wxPython wxArtProvider class with icons from the Suru Ic
 	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/custom_wx_icons_suru
-	:alt: License
 	:target: https://github.com/domdfcoding/custom_wx_icons_suru/blob/master/LICENSE
+	:alt: License
 
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/custom_wx_icons_suru
 	:alt: GitHub top language
@@ -102,14 +102,14 @@ Installation
 
 		.. prompt:: bash
 
-			pip install wx_icons_suru
+			python3 -m pip install wx_icons_suru --user
 
 
 	.. tab:: from GitHub
 
 		.. prompt:: bash
 
-			pip install git+https://github.com/domdfcoding/custom_wx_icons_suru@master
+			python3 -m pip install git+https://github.com/domdfcoding/custom_wx_icons_suru@master --user
 
 .. end installation
 
