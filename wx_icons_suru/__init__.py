@@ -34,8 +34,8 @@ from wx_icons_humanity import HumanityIconTheme, wxHumanityIconTheme  # type: ig
 # this package
 from wx_icons_suru import Suru
 
-with importlib_resources.path(Suru, "index.theme") as theme_index_path:
-	theme_index_path = str(theme_index_path)
+with importlib_resources.path(Suru, "index.theme") as theme_index_path_:
+	theme_index_path = str(theme_index_path_)
 
 __version__: str = "0.1.1"
 
@@ -56,8 +56,8 @@ class SuruIconTheme(HumanityIconTheme):
 		Create an instance of the Suru Icon Theme
 		"""
 
-		with importlib_resources.path(Suru, "index.theme") as theme_index_path:
-			theme_index_path = str(theme_index_path)
+		with importlib_resources.path(Suru, "index.theme") as theme_index_path_:
+			theme_index_path = str(theme_index_path_)
 
 		return cls.from_configparser(theme_index_path)
 
