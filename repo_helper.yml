@@ -28,7 +28,7 @@ travis_pypi_secure: "gOwyfiBEaHp3hfP7y71PLsuzolxafoc0ARLOY42vDbHd6T6L4RZjr3w+YCj
 
 # additional lines for MANIFEST.in
 manifest_additional:
-  - "recursive-include wx_icons_suru *"
+  - "recursive-include wx_icons_suru *.svg *.png *.theme *.icon *.xpm AUTHORS COPYING CONTRIBUTORS"
 
 classifiers:
   # "Environment :: MacOS X"

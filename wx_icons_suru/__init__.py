@@ -29,7 +29,7 @@ from typing import Any, Optional, Tuple, Union
 import importlib_resources  # type: ignore
 import wx  # type: ignore
 from wx_icons_hicolor import Icon, IconTheme
-from wx_icons_humanity import HumanityIconTheme, wxHumanityIconTheme  # type: ignore  # TODO
+from wx_icons_humanity import HumanityIconTheme, wxHumanityIconTheme
 
 # this package
 from wx_icons_suru import Suru
