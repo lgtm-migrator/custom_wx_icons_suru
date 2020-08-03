@@ -37,7 +37,7 @@ from wx_icons_suru import Suru
 with importlib_resources.path(Suru, "index.theme") as theme_index_path_:
 	theme_index_path = str(theme_index_path_)
 
-__version__: str = "0.1.1"
+__version__: str = "0.1.2"
 
 
 def version() -> str:
